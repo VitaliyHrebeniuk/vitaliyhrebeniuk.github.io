@@ -2,35 +2,196 @@
 <html>
     <head>
 	<title>I'm Vitaha</title>
+	<meta charset="UTF-8">
 	<style type="text/css">
-		p{
-			color: red;
-			background-color: yellow;
-		}
-		h3{
-			color: blue;
-			background-color: black;
-		}
-		div{
-			border:1px solid red;
-			height:200px;
-			width: 200px;
-		}
-		.bgcolortored{
-			background-color: red;
-		}
-		#fonttocolor{
-			color: blue;
-		}
+			#container{
+				margin:10px auto;
+				width: 70%;
+				border:10px solid gray;
+
+			}
+			#header {
+				width: 100%;
+				height: 70px;
+				background-color: rgb(61,79,91);
+				margin-bottom:0px;
+			}
+			.h1-header{
+				margin-top: 0px;
+				text-align: center;
+				padding-top: 15px;
+				font-family: comic sans ms;
+			}
+			#body{
+				display: flex;
+			}
+			#left-body{
+				width: 40%;
+				
+				background-image: linear-gradient(to right, rgb(67,67,67) , rgb(109,109,109));
+
+			}
+			#right-body{
+				width: 60%;
+				
+			}
+			.imageleftbody{
+				 border-radius: 35%;	
+                 border: 2px solid gray; 			 
+                 width: 200px;
+                 height: 200px;   
+                 margin-top: 20px;
+                 margin-left: 25%;
+			}
+			.div-left-body-1{
+				width:100%;
+				height:200px;
+			}
+			.div-left-body-2{
+				margin-top:20px;
+			}
+			.firstname-lastname{
+				border-bottom: 3px solid rgb(255,255,0);
+                margin-left: 20px;
+   			    margin-right: 20px;
+   			    text-align: center;
+
+			}
+			.gamer{
+				color:white;
+				font-family: comic sans ms;
+				font-size: 60px;
+
+			}
+			.love-div,.contact-div{
+				
+				text-align: center;
+				font-family: comic sans ms;
+				font-size: 40px;
+			}
+			.love,.contact{
+				color:white;
+				text-decoration: underline;
+			}
+			.smetanka{
+				width: 70%;
+				background-color:rgb(255,165,0);
+				font-family: comic sans ms;
+				border-radius: 8px;
+				text-align: center;
+				color:white;
+				margin-top: 5px;
+				margin-left: 10px;
+			}
+			.molochko{
+				width: 50%;
+				background-color:rgb(1,116,223);
+				font-family: comic sans ms;
+				border-radius: 8px;
+				text-align: center;
+				color:white;
+				margin-top: 5px;
+				margin-left: 10px;
+			}
+			.pivasik{
+				width: 90%;
+				background-color:rgb(0,128,0);
+				font-family: comic sans ms;
+				border-radius: 8px;
+				text-align: center;
+				color:white;
+				margin-top: 5px;
+				margin-left: 10px;
+			}
+			.vk,.ok,.facebook,.ul-link{
+				color:white;
+				text-decoration: underline;
+			}
+			.facebook{
+				margin-bottom: 20px;
+			}
+			.datebirthday,.softskill,.obomne{
+					width: 445px;
+					border-bottom:2px solid rgb(0,128,255);
+					
+					margin-left:5px;
+					margin-right: 5px;
+			}
+		
+			.dateofbirth,.softskill,.obomne{
+				color:rgb(8,75,140);
+				font-family: comic sans ms;
+				
+			}
+			.ul-softskill {
+                 list-style: none;
+                 margin: 0
+                }
+            .ul-softskill>li{
+                position: relative;
+                }
+            .ul-softskill>li:before {
+                content:  "—";
+                position: absolute;
+                left:     -18px;
+                }
 	</style>
 	</head>
 <body>
-<h3>this is heaader of h3</h3>
-<p>paragraph 1</p>
-<p>paragraph 2</p>
-<div>this is div 1</div>
-<div class="bgcolortored fonttocolor">this is div 2</div>
-<div id="fonttocolor">this is div 3</div>
-</table>
+ <div id="container">
+   	<div id="header">
+    		<div><h1 class="h1-header">Curriculum Vitae</h1></div>
+    </div>
+
+    <div id="body">
+    		<div id="left-body">
+    				<div class="div-left-body-1"><div class="image-left-body"><img class="imageleftbody" src="game.jpg"></div></div>
+    				<div class="div-left-body-2"><div class="firstname-lastname"><span class="gamer">Геймер
+    				Балда</span>
+    			</div></div>
+    			<div class="love-div"><p class="love">Люблю:</p></div>
+    			<div id="products">
+    					<div class="smetanka">Сметанку</div>
+    					<div class="molochko">Молочко</div>
+    					<div class="pivasik">Пивасик</div>
+    			</div>
+    			<div class="contact-div"><p class="contact">Контакты:</p></div>
+    			<div class="link">  <ul class='ul-link'>
+    									<li><p class='vk'> <a href="vk.com">VK</a></p></li>
+    									<li><p class='ok'> <a href="ok.ru">Ok</a></p></li>
+    									<li><p class='facebook'> <a href="facebook.com"> Facebook</a></p></li>
+    								</ul>	
+    		    </div>
+    		</div>
+    		
+    		<div id="right-body">
+    			<div class="datebirthday">
+    				<h2 class="dateofbirth">Дата рождения:</h2>
+    				<div><p class="dateofbirth">1 января 2000г</p></div>
+    				<h2 class="dateofbirth">Место рождения:</h2>
+    				<div><p class="dateofbirth">Азерот</p></div>
+    			</div>
+    			<div class="softskill">
+    							<h2 class="h2-softskill">Soft Skill</h2>
+
+                                    <ul class='ul-softskill'>
+    									<li><p class='Photoshop'>Photoshop</p></li>
+    									<li><p class='Word'>Word</p></li>
+    									<li><p class='Paint'>Paint</p></li>
+    								</ul>
+    			</div>
+    			<div class="obomne">
+    							<h2 class="h2-obomne">Обо мне:</h2>
+
+                                    <ul class='ul-softskill'>
+    									<li><p class='nepiu'>Не пью</p></li>
+    									<li><p class='nekuriu'>Не курю</p></li>
+    									<li><p class='neupotreblayu'>Не употребляю</p></li>
+    								</ul>
+    			</div>
+    		</div>
+    </div>
+</div>
+</div>
 </body>
 </html>
